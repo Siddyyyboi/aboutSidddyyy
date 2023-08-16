@@ -1,0 +1,253 @@
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+#video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+#image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 100%;
+  z-index: 0;
+  opacity: 100; /* Adjust the opacity as needed */
+}
+#content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 100px;
+  color: white;
+}
+.photo-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+
+.body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+#video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  /*object-fit: cover;*/
+}
+#content {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust for precise centering */
+  z-index: 1;
+  text-align: center;
+  padding: 20px; /* Add padding for spacing */
+  color: black; /* Set text color to black */
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+}
+  
+#photo-row {
+  position:relative;
+  top: 700px;
+  left: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.photo-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0px;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+  background-image: url('torn page.png');
+  height: 100%; /* Adjust to your preferred height */
+  width: 70%; /* Adjust to your preferred width */
+  background-size: cover;
+  background-position: center;
+  padding: 0px; /* Add padding for spacing */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.photo {
+  position: relative;
+  width: 1000px; /* Adjust the width to your preferred size */
+  height: 1000px; /* Adjust the height to your preferred size */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out; /* Add a transition effect */
+  overflow: hidden; /* Clip the image overflow */
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Fill the container without distortion */
+}
+
+.photo:hover {
+  transform: scale(1.1); /* Enlarge the photo on hover */
+
+} 
+.torn-page {
+  position: relative;
+  background-image: url(torn page.png);
+  background-size: cover;
+  background-position: center;
+  height: 100%; /* Adjust to your preferred height */
+  width: 70%; /* Adjust to your preferred width */
+  padding: 20px; /* Add padding for spacing */
+  border-radius: 8px;
+}
+
+.content-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-align: center;
+  padding: 20px;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  
+  font-family: 'Courier New', Courier, monospace;
+ 
+}
+
+
+.photo-1 {
+  background-image: url();
+  background-size: cover;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+ 
+}
+
+.photo-2 {
+  background-image: url(cats.png);
+  background-size: cover;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+}
+
+.photo-3 {
+ background-image: url(coffee.png);
+  background-size: cover;
+  background-position: center;
+  width: 233px;
+  height: 158px;
+  padding:0;
+}
+
+.photo-4 {
+  background-image: url(kiki.png);
+  background-size: cover;
+  background-position: center;
+  width: 203px;
+    height: 246px;
+}
+
+.photo-5 {
+  background-image: url(city.png);
+  background-size: cover;
+  background-position: center;
+  width: 269px;
+  height: 174px;
+
+}
+
+/* Style each photo with unique positions */
+.photo-1 {
+  grid-column: 1 / 3;
+  grid-row: 1;
+}
+
+.photo-2 {
+  grid-column: 3;
+  grid-row: 5 / 4;
+}
+
+.photo-3 {
+  grid-column: 1;
+  grid-row: 1 / 4;
+}
+
+.photo-4 {
+  grid-column: 1;
+  grid-row: 3 / 5;
+}
+
+.photo-5 {
+  grid-column: 2 / 4;
+  grid-row: 1 / 3;
+}
+.main-image {
+  width: 100%;
+  height: auto;
+  position: relative;
+  transition: transform 0.2s ease-in-out; /* Add a transition effect */
+}
+
+.main-image:hover {
+  transform: scale(1.1); /* Enlarge the main image on hover */
+}
+#drawing-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(torn\ page.png);
+  background-size: cover;
+}
+
+.h1{
+  text-align: center;
+  font-family: CourierPrime;
+
+}
+@font-face {
+  font-family: CourierPrime;
+  src: url(CourierPrimebld.ttf);
+}
+ 

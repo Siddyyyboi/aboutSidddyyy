@@ -1,0 +1,7 @@
+Hey I'm Siddarth! 
+I'm fascinated by the world of movies and cartoons 
+<video width="1920px" height="1080px" controls="controls">
+        <source src="backg.mp4" type="video/mp4"/>
+      </video>
+  <body style="background-image:url(back.png); background-size: cover;background-repeat: repeat-y;">   
+    <body>
